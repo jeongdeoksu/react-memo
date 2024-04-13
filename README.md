@@ -1,8 +1,5 @@
-# React + Vite
+# React.memo를 사용하는 경우
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 컴포넌트가 같은 Props로 자주 렌더링 될때
+- 컴포넌트가 렌더링이 될때마다 복잡한 로직을 처리해야 한다면
+- **오직 Pros 변화에만 의존하는 최적화 방법**
