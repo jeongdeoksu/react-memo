@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 const Child = ({ name, age }) => {
   console.log("👶자녀 컴포넌트도 렌더링이 되었어요.");
   return (
@@ -9,4 +11,4 @@ const Child = ({ name, age }) => {
   );
 };
 
-export default Child;
+export default memo(Child);
